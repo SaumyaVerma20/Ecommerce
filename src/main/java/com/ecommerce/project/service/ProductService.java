@@ -1,6 +1,5 @@
 package com.ecommerce.project.service;
 
-
 import com.ecommerce.project.payload.ProductDTO;
 import com.ecommerce.project.payload.ProductResponse;
 import org.springframework.web.multipart.MultipartFile;
@@ -20,5 +19,5 @@ public interface ProductService {
 
     ProductDTO deleteProduct(Long productId);
 
-    ProductDTO updateProductImage(Long productId, MultipartFile imageName) throws IOException;
+    ProductDTO updateProductImage(Long productId, MultipartFile image) throws IOException;
 }
